@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Epidemia: Plik źródłowy Country.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Epidemia
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Country.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;Person.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Disease.h&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classCountry.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCountry.html">Country</a> <span class="comment">//Klasa  zarządzająca przebiegiem zdarzeń w ciągu jednego dnia, posiada ona paramtery determinujące szanse człowieka na wygraną w walce z chorobą</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    std::vector&lt;Person *&gt; vectorOfPersons; </div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    std::vector&lt;Disease *&gt; vectorOfInfectedPersons;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">int</span> _PersonPower, _PersonImmuneSystem, _scienceLevel, _veganLevel, _LackOfHygiene;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">int</span> _scientists, _vegans, _commons;<span class="comment">//</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span> _cure;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classCountry.html">Country</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> population, <span class="keywordtype">int</span> sl, <span class="keywordtype">int</span> vl, <span class="keywordtype">int</span> zl);<span class="comment">//Przeprowadza całą symulację trwania epidemii, zależną od wartości początkowych jej zmiennych.</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">int</span> persons(); <span class="comment">//Zrwaca rozmiar wektora osób</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> infectedPersons();<span class="comment">//Zwraca rozmiar wektora osób zainfekowanych</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> cure();<span class="comment">//Zwraca wartość postępu szukania lekarstwa (od 10000 do 0)</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> InfectPerson(std::vector&lt;Person *&gt;::iterator personOpponent);<span class="comment">//W przypadku walki wygranej przez chorobę, funcja ta zaraża człowieka chorobą z którą przegrał walkę.</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> fight(fstream &amp;output, <span class="keywordtype">int</span> outputInfo);<span class="comment">//Symuluje walkę pomiędzy osobą a chorobą. Choroba nie zadaje osobie żadnych obrażeń, w przypadku wygranej po prostu zaraża osobę, natomiast w przypadku przegranej jednostka tej choroby ginie. Jeśli wygrywa osoba, to nie zostaje zarażona. Wynik walki jest uzależniony od parametrów zarówno choroby, jak i osoby, wybieranych losowo, jednak z innym przedziałem losowości w przypadku różnych klas chorób i osób.</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> spreadVirus(<span class="keywordtype">int</span> i, fstream &amp;output);<span class="comment">//Zaraża losowo wybraną osobę co 4 dni. Czyli symulacja naturalnego rozprzestrzeniania sie wirusa</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">bool</span> searchForCure(fstream &amp;output);<span class="comment">//Naukowcy szukają lekarstwa. Powodzenie poszukiwań zależne jest od wartości ich inteligencji, a jego wartość jest losowana pod koniec każdego dnia i odejmowana od puli (10000 to początkowa wartość puli)</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> cureSomeInfectedPersons(fstream &amp;output);<span class="comment">//Jeśli wartość _cure będzie równa 0 funkcja ta zaczyna leczyć ludzi. Lekarstwo jest losowo rozpraszane na kilka (ilość losowa) jednostek, a każda z nich ma 50% szans na powrót do zdrowia</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">string</span> description();<span class="comment">//Zwraca ilość osób zdrowych, chorych, postęp szukania lekarstwa itp.  używana do  wyświetlenia wartości początkowych na początku trwania programu</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">string</span> showEveryone();<span class="comment">//Wypisuje osoby zdrowe oraz zarażone po ich wektorach</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div><div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classCountry_html"><div class="ttname"><a href="classCountry.html">Country</a></div><div class="ttdef"><b>Definition:</b> Country.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

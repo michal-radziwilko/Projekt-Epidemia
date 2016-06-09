@@ -1,0 +1,16 @@
+\contentsline {chapter}{\numberline {1}Projekt-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Epidemia}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Indeks hierarchiczny}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Hierarchia klas}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Indeks klas}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Lista klas}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Dokumentacja klas}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Dokumentacja klasy Common\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Disease}{7}{section.4.1}
+\contentsline {section}{\numberline {4.2}Dokumentacja klasy Common\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Person}{7}{section.4.2}
+\contentsline {section}{\numberline {4.3}Dokumentacja klasy Country}{8}{section.4.3}
+\contentsline {section}{\numberline {4.4}Dokumentacja klasy Disease}{8}{section.4.4}
+\contentsline {section}{\numberline {4.5}Dokumentacja klasy Mutagen}{9}{section.4.5}
+\contentsline {section}{\numberline {4.6}Dokumentacja klasy Person}{9}{section.4.6}
+\contentsline {section}{\numberline {4.7}Dokumentacja klasy Scientist}{10}{section.4.7}
+\contentsline {section}{\numberline {4.8}Dokumentacja klasy Ultra\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Vegan}{10}{section.4.8}
+\contentsline {section}{\numberline {4.9}Dokumentacja klasy Vegan}{11}{section.4.9}
+\contentsline {chapter}{Indeks}{13}{section*.19}
