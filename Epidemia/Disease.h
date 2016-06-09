@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Disease //Klasa choroby, posiada parametry takie jak HP i ID choroby oraz cechy choroby od których zależy przebieg walki między nią a człowiekiem.
+class Disease /** *Klasa choroby, posiada parametry takie jak HP i ID choroby oraz cechy choroby od których zależy przebieg walki między nią a człowiekiem. */
 {
 	static int _diseaseCounter;
 	int _diseaseID, _diseaseHP;
@@ -16,7 +16,7 @@ public:
 	void damage(int dmg) { _diseaseHP -= dmg; }
 	bool isDead() { return _diseaseHP>0 ? false : true; }
 	virtual int attackChance() = 0;
-	virtual int who() = 0;//0-CommonDisease 1-UltraVegan 2-Mutagen
+	virtual int who() = 0;/** *0-CommonDisease 1-UltraVegan 2-Mutagen */
 	virtual bool tryAttack() = 0;
 
 	virtual string description() = 0;
@@ -32,7 +32,7 @@ public:
 	virtual bool tryAttack();
 
 	virtual string description();
-}; //Klasa przeciętnego rodzaju choroby, nie boi się ona vegan
+}; /** *Klasa przeciętnego rodzaju choroby, nie boi się ona vegan */
 
 class UltraVegan : public Disease
 {
@@ -44,7 +44,7 @@ public:
 	virtual bool tryAttack();
 
 	virtual string description();
-}; //Klasa wirusa który spier... ucieka w te pędy, gdy spotka vegana (tak na prawdę to każda osobę którą spotyka) zarażając po drodze kilka innych osób.
+}; /** *Klasa wirusa który spier... ucieka w te pędy, gdy spotka vegana (tak na prawdę to każda osobę którą spotyka) zarażając po drodze kilka innych osób. */
 
 class Mutagen : public Disease
 {
@@ -57,4 +57,4 @@ public:
 	virtual bool tryAttack();
 
 	virtual string description();
-}; //Klasa silnego wirusa, wyprowadza on kilka ataków jednocześnie podczas walki.
+}; /** *Klasa silnego wirusa, wyprowadza on kilka ataków jednocześnie podczas walki. */

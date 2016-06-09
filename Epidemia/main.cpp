@@ -22,7 +22,7 @@ int main(int argc, char const *argv[])
 	int ii = atoi(argv[1]), info = atoi(argv[2]);
 	srand(time(NULL));
 	fileLoad();
-	output.open("output.txt", ios::out | ios::trunc);//Do tego zewnętrznego pliku tekstowego jest zapisywany przebieg symulacji dzień po dniu.
+	output.open("output.txt", ios::out | ios::trunc);/** *Do tego zewnętrznego pliku tekstowego jest zapisywany przebieg symulacji dzień po dniu. */
 	int index = 0;
 	for (int i = 0; i<ii; i++)
 	{
@@ -57,7 +57,7 @@ void simulateCountry(int population, int scientists, int vegans, int infected_pe
 	output << text;
 }
 
-void fileLoad()//Wczytuje dane wejściowe programu z pliku zewnętrznego
+void fileLoad()/** *Wczytuje dane wejściowe programu z pliku zewnętrznego */
 {
 	fstream file("input.txt", ios::in);
 	int n;
