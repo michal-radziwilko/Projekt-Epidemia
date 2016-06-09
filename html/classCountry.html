@@ -38,7 +38,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
-      <li><a href="pages.html"><span>Dodatkowe&#160;strony</span></a></li>
       <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
       <li><a href="files.html"><span>Pliki</span></a></li>
       <li>
@@ -64,6 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
       <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
       <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
       <li><a href="hierarchy.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -89,43 +89,194 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 <div class="title">Dokumentacja klasy Country</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Country_8h_source.html">Country.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:afc0bccd7503b1878f47d816aad1be547"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc0bccd7503b1878f47d816aad1be547"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Country</b> (unsigned int population, int sl, int vl, int zl)</td></tr>
 <tr class="separator:afc0bccd7503b1878f47d816aad1be547"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1dd10f4a0d9d1cf53fb8a9f4079de93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1dd10f4a0d9d1cf53fb8a9f4079de93"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>persons</b> ()</td></tr>
+<tr class="memitem:ab1dd10f4a0d9d1cf53fb8a9f4079de93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCountry.html#ab1dd10f4a0d9d1cf53fb8a9f4079de93">persons</a> ()</td></tr>
 <tr class="separator:ab1dd10f4a0d9d1cf53fb8a9f4079de93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b8ee891f42aed5f438e564df7bf3b0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b8ee891f42aed5f438e564df7bf3b0a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>infectedPersons</b> ()</td></tr>
+<tr class="memitem:a3b8ee891f42aed5f438e564df7bf3b0a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCountry.html#a3b8ee891f42aed5f438e564df7bf3b0a">infectedPersons</a> ()</td></tr>
 <tr class="separator:a3b8ee891f42aed5f438e564df7bf3b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a464c5b103990dfab70b50217edb60876"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a464c5b103990dfab70b50217edb60876"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>cure</b> ()</td></tr>
+<tr class="memitem:a464c5b103990dfab70b50217edb60876"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCountry.html#a464c5b103990dfab70b50217edb60876">cure</a> ()</td></tr>
 <tr class="separator:a464c5b103990dfab70b50217edb60876"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c46c5155c99175ffb3acef946312be0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c46c5155c99175ffb3acef946312be0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>InfectPerson</b> (std::vector&lt; <a class="el" href="classPerson.html">Person</a> * &gt;::iterator personOpponent)</td></tr>
+<tr class="memitem:a5c46c5155c99175ffb3acef946312be0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCountry.html#a5c46c5155c99175ffb3acef946312be0">InfectPerson</a> (std::vector&lt; <a class="el" href="classPerson.html">Person</a> * &gt;::iterator personOpponent)</td></tr>
 <tr class="separator:a5c46c5155c99175ffb3acef946312be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7333fae8f953c2f39da1a46c3d3862a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7333fae8f953c2f39da1a46c3d3862a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>fight</b> (fstream &amp;output, int outputInfo)</td></tr>
-<tr class="separator:ae7333fae8f953c2f39da1a46c3d3862a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8fe23fc3002c75b93946cae54c4f202"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8fe23fc3002c75b93946cae54c4f202"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spreadVirus</b> (int i, fstream &amp;output)</td></tr>
+<tr class="memitem:aa8fe23fc3002c75b93946cae54c4f202"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCountry.html#aa8fe23fc3002c75b93946cae54c4f202">spreadVirus</a> (int i, fstream &amp;output)</td></tr>
 <tr class="separator:aa8fe23fc3002c75b93946cae54c4f202"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceb291a044a495483951745eecece744"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aceb291a044a495483951745eecece744"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>searchForCure</b> (fstream &amp;output)</td></tr>
+<tr class="memitem:aceb291a044a495483951745eecece744"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCountry.html#aceb291a044a495483951745eecece744">searchForCure</a> (fstream &amp;output)</td></tr>
 <tr class="separator:aceb291a044a495483951745eecece744"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87a885d659d7e47e405d5d445fd4f0ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87a885d659d7e47e405d5d445fd4f0ee"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cureSomeInfectedPersons</b> (fstream &amp;output)</td></tr>
+<tr class="memitem:a87a885d659d7e47e405d5d445fd4f0ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCountry.html#a87a885d659d7e47e405d5d445fd4f0ee">cureSomeInfectedPersons</a> (fstream &amp;output)</td></tr>
 <tr class="separator:a87a885d659d7e47e405d5d445fd4f0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15d7e9b23f141f837fec76cedd76683b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15d7e9b23f141f837fec76cedd76683b"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> ()</td></tr>
+<tr class="memitem:a15d7e9b23f141f837fec76cedd76683b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCountry.html#a15d7e9b23f141f837fec76cedd76683b">description</a> ()</td></tr>
 <tr class="separator:a15d7e9b23f141f837fec76cedd76683b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a167fa855a40dd3bb0274ee8c01c994c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a167fa855a40dd3bb0274ee8c01c994c8"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>showEveryone</b> ()</td></tr>
+<tr class="memitem:a167fa855a40dd3bb0274ee8c01c994c8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCountry.html#a167fa855a40dd3bb0274ee8c01c994c8">showEveryone</a> ()</td></tr>
 <tr class="separator:a167fa855a40dd3bb0274ee8c01c994c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>*Klasa zarządzająca przebiegiem zdarzeń w ciągu jednego dnia, posiada ona paramtery determinujące szanse człowieka na wygraną w walce z chorobą </p>
+</div><h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="a464c5b103990dfab70b50217edb60876"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Country::cure </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>*Zwraca rozmiar wektora osób zainfekowanych </p>
+
+</div>
+</div>
+<a class="anchor" id="a87a885d659d7e47e405d5d445fd4f0ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Country::cureSomeInfectedPersons </td>
+          <td>(</td>
+          <td class="paramtype">fstream &amp;&#160;</td>
+          <td class="paramname"><em>output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>*Naukowcy szukają lekarstwa. Powodzenie poszukiwań zależne jest od wartości ich inteligencji, a jego wartość jest losowana pod koniec każdego dnia i odejmowana od puli (10000 to początkowa wartość puli) </p>
+
+</div>
+</div>
+<a class="anchor" id="a15d7e9b23f141f837fec76cedd76683b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Country::description </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>*Jeśli wartość _cure będzie równa 0 funkcja ta zaczyna leczyć ludzi. Lekarstwo jest losowo rozpraszane na kilka (ilość losowa) jednostek, a każda z nich ma 50% szans na powrót do zdrowia </p>
+
+</div>
+</div>
+<a class="anchor" id="a3b8ee891f42aed5f438e564df7bf3b0a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Country::infectedPersons </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>*Zwraca rozmiar wektora osób </p>
+
+</div>
+</div>
+<a class="anchor" id="a5c46c5155c99175ffb3acef946312be0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Country::InfectPerson </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classPerson.html">Person</a> * &gt;::iterator&#160;</td>
+          <td class="paramname"><em>personOpponent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>*Zwraca wartość postępu szukania lekarstwa (od 10000 do 0) </p>
+
+</div>
+</div>
+<a class="anchor" id="ab1dd10f4a0d9d1cf53fb8a9f4079de93"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Country::persons </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>*Przeprowadza całą symulację trwania epidemii, zależną od wartości początkowych jej zmiennych. </p>
+
+</div>
+</div>
+<a class="anchor" id="aceb291a044a495483951745eecece744"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Country::searchForCure </td>
+          <td>(</td>
+          <td class="paramtype">fstream &amp;&#160;</td>
+          <td class="paramname"><em>output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>*Zaraża losowo wybraną osobę co 4 dni. Czyli symulacja naturalnego rozprzestrzeniania sie wirusa </p>
+
+</div>
+</div>
+<a class="anchor" id="a167fa855a40dd3bb0274ee8c01c994c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Country::showEveryone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>*Zwraca ilość osób zdrowych, chorych, postęp szukania lekarstwa itp. używana do wyświetlenia wartości początkowych na początku trwania programu </p>
+
+</div>
+</div>
+<a class="anchor" id="aa8fe23fc3002c75b93946cae54c4f202"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Country::spreadVirus </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fstream &amp;&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>*W przypadku walki wygranej przez chorobę, funcja ta zaraża człowieka chorobą z którą przegrał walkę. void fight(fstream &amp;output, int outputInfo);//Symuluje walkę pomiędzy osobą a chorobą. Choroba nie zadaje osobie żadnych obrażeń, w przypadku wygranej po prostu zaraża osobę, natomiast w przypadku przegranej jednostka tej choroby ginie. Jeśli wygrywa osoba, to nie zostaje zarażona. Wynik walki jest uzależniony od parametrów zarówno choroby, jak i osoby, wybieranych losowo, jednak z innym przedziałem losowości w przypadku różnych klas chorób i osób. </p>
+
+</div>
+</div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
 <li><a class="el" href="Country_8h_source.html">Country.h</a></li>
 <li>Country.cpp</li>

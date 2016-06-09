@@ -38,7 +38,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
-      <li><a href="pages.html"><span>Dodatkowe&#160;strony</span></a></li>
       <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
       <li><a href="files.html"><span>Pliki</span></a></li>
       <li>
@@ -64,6 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
       <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
       <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
       <li><a href="hierarchy.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -89,6 +89,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 <div class="title">Dokumentacja klasy Mutagen</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Disease_8h_source.html">Disease.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagram dziedziczenia dla Mutagen</div>
 <div class="dyncontent">
@@ -110,8 +112,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>attackCount</b> ()</td
 <tr class="memitem:a620c593682e56b1a0039f8f1aeea4f39"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a620c593682e56b1a0039f8f1aeea4f39"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>who</b> ()</td></tr>
 <tr class="separator:a620c593682e56b1a0039f8f1aeea4f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c495ef43212c37e125b771d8d02898c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c495ef43212c37e125b771d8d02898c"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>tryAttack</b> ()</td></tr>
+<tr class="memitem:a6c495ef43212c37e125b771d8d02898c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMutagen.html#a6c495ef43212c37e125b771d8d02898c">tryAttack</a> ()</td></tr>
 <tr class="separator:a6c495ef43212c37e125b771d8d02898c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47ac6ab84065448d49954c57fb555a3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47ac6ab84065448d49954c57fb555a3e"></a>
 virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> ()</td></tr>
@@ -130,6 +131,35 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>damage</b> (int dmg)<
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDead</b> ()</td></tr>
 <tr class="separator:aec6c5373af8923c7eeb23ab8601298cb inherit pub_methods_classDisease"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>*Klasa wirusa który spier... ucieka w te pędy, gdy spotka vegana (tak na prawdę to każda osobę którą spotyka) zarażając po drodze kilka innych osób. </p>
+</div><h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="a6c495ef43212c37e125b771d8d02898c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mutagen::tryAttack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>*0-CommonDisease 1-UltraVegan 2-Mutagen </p>
+
+<p>Implementuje <a class="el" href="classDisease.html#a4186b72a74f3d2e654b38254ca0d32b7">Disease</a>.</p>
+
+</div>
+</div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
 <li><a class="el" href="Disease_8h_source.html">Disease.h</a></li>
 <li>Disease.cpp</li>

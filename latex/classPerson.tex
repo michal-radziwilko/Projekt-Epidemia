@@ -1,5 +1,9 @@
 \hypertarget{classPerson}{}\section{Dokumentacja klasy Person}
 \label{classPerson}\index{Person@{Person}}
+
+
+{\ttfamily \#include $<$Person.\+h$>$}
+
 Diagram dziedziczenia dla Person\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -12,33 +16,117 @@ Diagram dziedziczenia dla Person\begin{figure}[H]
 int {\bfseries person\+ID} ()\hypertarget{classPerson_a4ea656fa93595281740221a37e223044}{}\label{classPerson_a4ea656fa93595281740221a37e223044}
 
 \item 
-int {\bfseries person\+HP} ()\hypertarget{classPerson_a3054b34b9ecdc924630f54f6a8b7bc02}{}\label{classPerson_a3054b34b9ecdc924630f54f6a8b7bc02}
-
+int \hyperlink{classPerson_a3054b34b9ecdc924630f54f6a8b7bc02}{person\+HP} ()
 \item 
-int {\bfseries is\+Dead} ()\hypertarget{classPerson_a4d88afde6fa07378dbdb18eb50ab9e64}{}\label{classPerson_a4d88afde6fa07378dbdb18eb50ab9e64}
-
+int \hyperlink{classPerson_a4d88afde6fa07378dbdb18eb50ab9e64}{is\+Dead} ()
 \item 
-void {\bfseries damage} (int dmg)\hypertarget{classPerson_a5dbdaa48f3456c30c792fb40cf16b9eb}{}\label{classPerson_a5dbdaa48f3456c30c792fb40cf16b9eb}
-
+void \hyperlink{classPerson_a5dbdaa48f3456c30c792fb40cf16b9eb}{damage} (int dmg)
 \item 
-virtual int {\bfseries attack} ()=0\hypertarget{classPerson_a7cabe13a0c3122fa7ac0e9f005a87346}{}\label{classPerson_a7cabe13a0c3122fa7ac0e9f005a87346}
-
+virtual int \hyperlink{classPerson_a7cabe13a0c3122fa7ac0e9f005a87346}{attack} ()=0
 \item 
-virtual int {\bfseries attack\+Chance} ()=0\hypertarget{classPerson_a4f525256f6ffb3135e61bd22ff48c37a}{}\label{classPerson_a4f525256f6ffb3135e61bd22ff48c37a}
-
+virtual int \hyperlink{classPerson_a4f525256f6ffb3135e61bd22ff48c37a}{attack\+Chance} ()=0
 \item 
-virtual int {\bfseries dodge\+Chance} ()=0\hypertarget{classPerson_adb64abc2cc5e02f1ebbc7823e7921168}{}\label{classPerson_adb64abc2cc5e02f1ebbc7823e7921168}
-
+virtual int \hyperlink{classPerson_adb64abc2cc5e02f1ebbc7823e7921168}{dodge\+Chance} ()=0
 \item 
-virtual int {\bfseries intelligence} ()=0\hypertarget{classPerson_a3d18aad60b7ea1305e1a469d7d5fc216}{}\label{classPerson_a3d18aad60b7ea1305e1a469d7d5fc216}
-
+virtual int \hyperlink{classPerson_a3d18aad60b7ea1305e1a469d7d5fc216}{intelligence} ()=0
 \item 
-virtual int {\bfseries who} ()=0\hypertarget{classPerson_a7d102d6c8ed786f4ad1fcd2c3cea2f3e}{}\label{classPerson_a7d102d6c8ed786f4ad1fcd2c3cea2f3e}
-
+virtual int \hyperlink{classPerson_a7d102d6c8ed786f4ad1fcd2c3cea2f3e}{who} ()=0
 \item 
-virtual string {\bfseries description} ()=0\hypertarget{classPerson_aef5de94dd30ff791097a0c1444999e60}{}\label{classPerson_aef5de94dd30ff791097a0c1444999e60}
-
+virtual string \hyperlink{classPerson_aef5de94dd30ff791097a0c1444999e60}{description} ()=0
 \end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+$\ast$\+Klasa osób. Posiada wartości ID, HP oraz kilka przydatnych metod. 
+
+\subsection{Dokumentacja funkcji składowych}
+\index{Person@{Person}!attack@{attack}}
+\index{attack@{attack}!Person@{Person}}
+\subsubsection[{\texorpdfstring{attack()=0}{attack()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Person\+::attack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classPerson_a7cabe13a0c3122fa7ac0e9f005a87346}{}\label{classPerson_a7cabe13a0c3122fa7ac0e9f005a87346}
+$\ast$\+Zadaje dmg osobom. 
+
+Implementowany w \hyperlink{classVegan_a49da538a7bdc7cf95e2995d374844690}{Vegan} i \hyperlink{classCommonPerson_aa6124a1a40f875cb3d739dee53af1724}{Common\+Person}.
+
+\index{Person@{Person}!attack\+Chance@{attack\+Chance}}
+\index{attack\+Chance@{attack\+Chance}!Person@{Person}}
+\subsubsection[{\texorpdfstring{attack\+Chance()=0}{attackChance()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Person\+::attack\+Chance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classPerson_a4f525256f6ffb3135e61bd22ff48c37a}{}\label{classPerson_a4f525256f6ffb3135e61bd22ff48c37a}
+$\ast$\+Atak wyprowadzany przez osobę 
+
+Implementowany w \hyperlink{classVegan_add22eca62b8e3c3ffe93da1d0e5d91f5}{Vegan} i \hyperlink{classCommonPerson_a1334a830f0d44df46ea92cd7ef2ebc29}{Common\+Person}.
+
+\index{Person@{Person}!damage@{damage}}
+\index{damage@{damage}!Person@{Person}}
+\subsubsection[{\texorpdfstring{damage(int dmg)}{damage(int dmg)}}]{\setlength{\rightskip}{0pt plus 5cm}void Person\+::damage (
+\begin{DoxyParamCaption}
+\item[{int}]{dmg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPerson_a5dbdaa48f3456c30c792fb40cf16b9eb}{}\label{classPerson_a5dbdaa48f3456c30c792fb40cf16b9eb}
+$\ast$\+Sprawdza, czy osoba jest martwa. \index{Person@{Person}!description@{description}}
+\index{description@{description}!Person@{Person}}
+\subsubsection[{\texorpdfstring{description()=0}{description()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual string Person\+::description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classPerson_aef5de94dd30ff791097a0c1444999e60}{}\label{classPerson_aef5de94dd30ff791097a0c1444999e60}
+$\ast$0-\/\+Common 1-\/\+Scientist 2-\/\+Vegans 
+
+Implementowany w \hyperlink{classVegan_a021955c46ba7952ab46a07a768f9b3b3}{Vegan}, \hyperlink{classScientist_a31ff8bf82c31257c1a22e16fcca3da7b}{Scientist} i \hyperlink{classCommonPerson_a50960e537f0353dbd8bee7a53b7963e3}{Common\+Person}.
+
+\index{Person@{Person}!dodge\+Chance@{dodge\+Chance}}
+\index{dodge\+Chance@{dodge\+Chance}!Person@{Person}}
+\subsubsection[{\texorpdfstring{dodge\+Chance()=0}{dodgeChance()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Person\+::dodge\+Chance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classPerson_adb64abc2cc5e02f1ebbc7823e7921168}{}\label{classPerson_adb64abc2cc5e02f1ebbc7823e7921168}
+$\ast$\+Szansa na atak 
+
+Implementowany w \hyperlink{classVegan_aad321fbb0951c24515900f002ede0286}{Vegan} i \hyperlink{classCommonPerson_a8de900c43b59c0c14e896d4cba68cb76}{Common\+Person}.
+
+\index{Person@{Person}!intelligence@{intelligence}}
+\index{intelligence@{intelligence}!Person@{Person}}
+\subsubsection[{\texorpdfstring{intelligence()=0}{intelligence()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Person\+::intelligence (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classPerson_a3d18aad60b7ea1305e1a469d7d5fc216}{}\label{classPerson_a3d18aad60b7ea1305e1a469d7d5fc216}
+$\ast$\+Szansa na unik 
+
+Implementowany w \hyperlink{classVegan_a2b63e0fcdefc296e4164d4e26fda4aa8}{Vegan}, \hyperlink{classScientist_a5a8cd2cea36347764ad85328a814c892}{Scientist} i \hyperlink{classCommonPerson_acf2a1d582a17534ea43da4e51cde5b3b}{Common\+Person}.
+
+\index{Person@{Person}!is\+Dead@{is\+Dead}}
+\index{is\+Dead@{is\+Dead}!Person@{Person}}
+\subsubsection[{\texorpdfstring{is\+Dead()}{isDead()}}]{\setlength{\rightskip}{0pt plus 5cm}int Person\+::is\+Dead (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPerson_a4d88afde6fa07378dbdb18eb50ab9e64}{}\label{classPerson_a4d88afde6fa07378dbdb18eb50ab9e64}
+$\ast$\+Zwraca HP osoby. \index{Person@{Person}!person\+HP@{person\+HP}}
+\index{person\+HP@{person\+HP}!Person@{Person}}
+\subsubsection[{\texorpdfstring{person\+H\+P()}{personHP()}}]{\setlength{\rightskip}{0pt plus 5cm}int Person\+::person\+HP (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPerson_a3054b34b9ecdc924630f54f6a8b7bc02}{}\label{classPerson_a3054b34b9ecdc924630f54f6a8b7bc02}
+$\ast$\+Zwraca ID osoby. \index{Person@{Person}!who@{who}}
+\index{who@{who}!Person@{Person}}
+\subsubsection[{\texorpdfstring{who()=0}{who()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Person\+::who (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classPerson_a7d102d6c8ed786f4ad1fcd2c3cea2f3e}{}\label{classPerson_a7d102d6c8ed786f4ad1fcd2c3cea2f3e}
+$\ast$\+Inteligencja 
+
+Implementowany w \hyperlink{classVegan_a46b4008d435a0ab8c0986ceda995d2da}{Vegan}, \hyperlink{classScientist_a8ae5a60d92adca7fa1840ffe369e12ba}{Scientist} i \hyperlink{classCommonPerson_af0b8d634f112c3f9d564124700758c6f}{Common\+Person}.
+
 
 
 Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}

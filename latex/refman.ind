@@ -1,31 +1,135 @@
 \begin{theindex}
 
-  \item {Common\+Disease}, \hyperpage{7}
-  \item {Common\+Person}, \hyperpage{7}
-  \item {Country}, \hyperpage{8}
+  \item {attack}
+    \subitem {Common\+Person}, \hyperpage{6}
+    \subitem {Person}, \hyperpage{11}
+    \subitem {Vegan}, \hyperpage{14}
+  \item {attack\+Chance}
+    \subitem {Common\+Person}, \hyperpage{6}
+    \subitem {Person}, \hyperpage{11}
+    \subitem {Vegan}, \hyperpage{14}
 
   \indexspace
 
-  \item {Disease}, \hyperpage{8}
+  \item {Common\+Disease}, \hyperpage{5}
+    \subitem {try\+Attack}, \hyperpage{5}
+  \item {Common\+Person}, \hyperpage{6}
+    \subitem {attack}, \hyperpage{6}
+    \subitem {attack\+Chance}, \hyperpage{6}
+    \subitem {description}, \hyperpage{6}
+    \subitem {dodge\+Chance}, \hyperpage{6}
+    \subitem {intelligence}, \hyperpage{6}
+    \subitem {who}, \hyperpage{7}
+  \item {Country}, \hyperpage{7}
+    \subitem {cure}, \hyperpage{7}
+    \subitem {cure\+Some\+Infected\+Persons}, \hyperpage{7}
+    \subitem {description}, \hyperpage{8}
+    \subitem {Infect\+Person}, \hyperpage{8}
+    \subitem {infected\+Persons}, \hyperpage{8}
+    \subitem {persons}, \hyperpage{8}
+    \subitem {search\+For\+Cure}, \hyperpage{8}
+    \subitem {show\+Everyone}, \hyperpage{8}
+    \subitem {spread\+Virus}, \hyperpage{8}
+  \item {cure}
+    \subitem {Country}, \hyperpage{7}
+  \item {cure\+Some\+Infected\+Persons}
+    \subitem {Country}, \hyperpage{7}
+
+  \indexspace
+
+  \item {damage}
+    \subitem {Person}, \hyperpage{11}
+  \item {description}
+    \subitem {Common\+Person}, \hyperpage{6}
+    \subitem {Country}, \hyperpage{8}
+    \subitem {Person}, \hyperpage{11}
+    \subitem {Scientist}, \hyperpage{12}
+    \subitem {Vegan}, \hyperpage{14}
+  \item {Disease}, \hyperpage{9}
+    \subitem {try\+Attack}, \hyperpage{9}
+  \item {dodge\+Chance}
+    \subitem {Common\+Person}, \hyperpage{6}
+    \subitem {Person}, \hyperpage{11}
+    \subitem {Vegan}, \hyperpage{14}
+
+  \indexspace
+
+  \item {Infect\+Person}
+    \subitem {Country}, \hyperpage{8}
+  \item {infected\+Persons}
+    \subitem {Country}, \hyperpage{8}
+  \item {intelligence}
+    \subitem {Common\+Person}, \hyperpage{6}
+    \subitem {Person}, \hyperpage{11}
+    \subitem {Scientist}, \hyperpage{12}
+    \subitem {Vegan}, \hyperpage{15}
+  \item {is\+Dead}
+    \subitem {Person}, \hyperpage{11}
 
   \indexspace
 
   \item {Mutagen}, \hyperpage{9}
+    \subitem {try\+Attack}, \hyperpage{10}
 
   \indexspace
 
-  \item {Person}, \hyperpage{9}
+  \item {Person}, \hyperpage{10}
+    \subitem {attack}, \hyperpage{11}
+    \subitem {attack\+Chance}, \hyperpage{11}
+    \subitem {damage}, \hyperpage{11}
+    \subitem {description}, \hyperpage{11}
+    \subitem {dodge\+Chance}, \hyperpage{11}
+    \subitem {intelligence}, \hyperpage{11}
+    \subitem {is\+Dead}, \hyperpage{11}
+    \subitem {person\+HP}, \hyperpage{11}
+    \subitem {who}, \hyperpage{12}
+  \item {person\+HP}
+    \subitem {Person}, \hyperpage{11}
+  \item {persons}
+    \subitem {Country}, \hyperpage{8}
 
   \indexspace
 
-  \item {Scientist}, \hyperpage{10}
+  \item {Scientist}, \hyperpage{12}
+    \subitem {description}, \hyperpage{12}
+    \subitem {intelligence}, \hyperpage{12}
+    \subitem {who}, \hyperpage{13}
+  \item {search\+For\+Cure}
+    \subitem {Country}, \hyperpage{8}
+  \item {show\+Everyone}
+    \subitem {Country}, \hyperpage{8}
+  \item {spread\+Virus}
+    \subitem {Country}, \hyperpage{8}
 
   \indexspace
 
-  \item {Ultra\+Vegan}, \hyperpage{10}
+  \item {try\+Attack}
+    \subitem {Common\+Disease}, \hyperpage{5}
+    \subitem {Disease}, \hyperpage{9}
+    \subitem {Mutagen}, \hyperpage{10}
+    \subitem {Ultra\+Vegan}, \hyperpage{13}
 
   \indexspace
 
-  \item {Vegan}, \hyperpage{11}
+  \item {Ultra\+Vegan}, \hyperpage{13}
+    \subitem {try\+Attack}, \hyperpage{13}
+
+  \indexspace
+
+  \item {Vegan}, \hyperpage{14}
+    \subitem {attack}, \hyperpage{14}
+    \subitem {attack\+Chance}, \hyperpage{14}
+    \subitem {description}, \hyperpage{14}
+    \subitem {dodge\+Chance}, \hyperpage{14}
+    \subitem {intelligence}, \hyperpage{15}
+    \subitem {who}, \hyperpage{15}
+
+  \indexspace
+
+  \item {who}
+    \subitem {Common\+Person}, \hyperpage{7}
+    \subitem {Person}, \hyperpage{12}
+    \subitem {Scientist}, \hyperpage{13}
+    \subitem {Vegan}, \hyperpage{15}
 
 \end{theindex}

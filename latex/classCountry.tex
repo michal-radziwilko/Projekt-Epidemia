@@ -1,42 +1,104 @@
 \hypertarget{classCountry}{}\section{Dokumentacja klasy Country}
 \label{classCountry}\index{Country@{Country}}
+
+
+{\ttfamily \#include $<$Country.\+h$>$}
+
 \subsection*{Metody publiczne}
 \begin{DoxyCompactItemize}
 \item 
 {\bfseries Country} (unsigned int population, int sl, int vl, int zl)\hypertarget{classCountry_afc0bccd7503b1878f47d816aad1be547}{}\label{classCountry_afc0bccd7503b1878f47d816aad1be547}
 
 \item 
-int {\bfseries persons} ()\hypertarget{classCountry_ab1dd10f4a0d9d1cf53fb8a9f4079de93}{}\label{classCountry_ab1dd10f4a0d9d1cf53fb8a9f4079de93}
-
+int \hyperlink{classCountry_ab1dd10f4a0d9d1cf53fb8a9f4079de93}{persons} ()
 \item 
-int {\bfseries infected\+Persons} ()\hypertarget{classCountry_a3b8ee891f42aed5f438e564df7bf3b0a}{}\label{classCountry_a3b8ee891f42aed5f438e564df7bf3b0a}
-
+int \hyperlink{classCountry_a3b8ee891f42aed5f438e564df7bf3b0a}{infected\+Persons} ()
 \item 
-int {\bfseries cure} ()\hypertarget{classCountry_a464c5b103990dfab70b50217edb60876}{}\label{classCountry_a464c5b103990dfab70b50217edb60876}
-
+int \hyperlink{classCountry_a464c5b103990dfab70b50217edb60876}{cure} ()
 \item 
-void {\bfseries Infect\+Person} (std\+::vector$<$ \hyperlink{classPerson}{Person} $\ast$ $>$\+::iterator person\+Opponent)\hypertarget{classCountry_a5c46c5155c99175ffb3acef946312be0}{}\label{classCountry_a5c46c5155c99175ffb3acef946312be0}
-
+void \hyperlink{classCountry_a5c46c5155c99175ffb3acef946312be0}{Infect\+Person} (std\+::vector$<$ \hyperlink{classPerson}{Person} $\ast$ $>$\+::iterator person\+Opponent)
 \item 
-void {\bfseries fight} (fstream \&output, int output\+Info)\hypertarget{classCountry_ae7333fae8f953c2f39da1a46c3d3862a}{}\label{classCountry_ae7333fae8f953c2f39da1a46c3d3862a}
-
+void \hyperlink{classCountry_aa8fe23fc3002c75b93946cae54c4f202}{spread\+Virus} (int i, fstream \&output)
 \item 
-void {\bfseries spread\+Virus} (int i, fstream \&output)\hypertarget{classCountry_aa8fe23fc3002c75b93946cae54c4f202}{}\label{classCountry_aa8fe23fc3002c75b93946cae54c4f202}
-
+bool \hyperlink{classCountry_aceb291a044a495483951745eecece744}{search\+For\+Cure} (fstream \&output)
 \item 
-bool {\bfseries search\+For\+Cure} (fstream \&output)\hypertarget{classCountry_aceb291a044a495483951745eecece744}{}\label{classCountry_aceb291a044a495483951745eecece744}
-
+void \hyperlink{classCountry_a87a885d659d7e47e405d5d445fd4f0ee}{cure\+Some\+Infected\+Persons} (fstream \&output)
 \item 
-void {\bfseries cure\+Some\+Infected\+Persons} (fstream \&output)\hypertarget{classCountry_a87a885d659d7e47e405d5d445fd4f0ee}{}\label{classCountry_a87a885d659d7e47e405d5d445fd4f0ee}
-
+string \hyperlink{classCountry_a15d7e9b23f141f837fec76cedd76683b}{description} ()
 \item 
-string {\bfseries description} ()\hypertarget{classCountry_a15d7e9b23f141f837fec76cedd76683b}{}\label{classCountry_a15d7e9b23f141f837fec76cedd76683b}
-
-\item 
-string {\bfseries show\+Everyone} ()\hypertarget{classCountry_a167fa855a40dd3bb0274ee8c01c994c8}{}\label{classCountry_a167fa855a40dd3bb0274ee8c01c994c8}
-
+string \hyperlink{classCountry_a167fa855a40dd3bb0274ee8c01c994c8}{show\+Everyone} ()
 \end{DoxyCompactItemize}
 
+
+\subsection{Opis szczegółowy}
+$\ast$\+Klasa zarządzająca przebiegiem zdarzeń w ciągu jednego dnia, posiada ona paramtery determinujące szanse człowieka na wygraną w walce z chorobą 
+
+\subsection{Dokumentacja funkcji składowych}
+\index{Country@{Country}!cure@{cure}}
+\index{cure@{cure}!Country@{Country}}
+\subsubsection[{\texorpdfstring{cure()}{cure()}}]{\setlength{\rightskip}{0pt plus 5cm}int Country\+::cure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCountry_a464c5b103990dfab70b50217edb60876}{}\label{classCountry_a464c5b103990dfab70b50217edb60876}
+$\ast$\+Zwraca rozmiar wektora osób zainfekowanych \index{Country@{Country}!cure\+Some\+Infected\+Persons@{cure\+Some\+Infected\+Persons}}
+\index{cure\+Some\+Infected\+Persons@{cure\+Some\+Infected\+Persons}!Country@{Country}}
+\subsubsection[{\texorpdfstring{cure\+Some\+Infected\+Persons(fstream \&output)}{cureSomeInfectedPersons(fstream &output)}}]{\setlength{\rightskip}{0pt plus 5cm}void Country\+::cure\+Some\+Infected\+Persons (
+\begin{DoxyParamCaption}
+\item[{fstream \&}]{output}
+\end{DoxyParamCaption}
+)}\hypertarget{classCountry_a87a885d659d7e47e405d5d445fd4f0ee}{}\label{classCountry_a87a885d659d7e47e405d5d445fd4f0ee}
+$\ast$\+Naukowcy szukają lekarstwa. Powodzenie poszukiwań zależne jest od wartości ich inteligencji, a jego wartość jest losowana pod koniec każdego dnia i odejmowana od puli (10000 to początkowa wartość puli) \index{Country@{Country}!description@{description}}
+\index{description@{description}!Country@{Country}}
+\subsubsection[{\texorpdfstring{description()}{description()}}]{\setlength{\rightskip}{0pt plus 5cm}string Country\+::description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCountry_a15d7e9b23f141f837fec76cedd76683b}{}\label{classCountry_a15d7e9b23f141f837fec76cedd76683b}
+$\ast$\+Jeśli wartość \+\_\+cure będzie równa 0 funkcja ta zaczyna leczyć ludzi. Lekarstwo jest losowo rozpraszane na kilka (ilość losowa) jednostek, a każda z nich ma 50\% szans na powrót do zdrowia \index{Country@{Country}!infected\+Persons@{infected\+Persons}}
+\index{infected\+Persons@{infected\+Persons}!Country@{Country}}
+\subsubsection[{\texorpdfstring{infected\+Persons()}{infectedPersons()}}]{\setlength{\rightskip}{0pt plus 5cm}int Country\+::infected\+Persons (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCountry_a3b8ee891f42aed5f438e564df7bf3b0a}{}\label{classCountry_a3b8ee891f42aed5f438e564df7bf3b0a}
+$\ast$\+Zwraca rozmiar wektora osób \index{Country@{Country}!Infect\+Person@{Infect\+Person}}
+\index{Infect\+Person@{Infect\+Person}!Country@{Country}}
+\subsubsection[{\texorpdfstring{Infect\+Person(std\+::vector$<$ Person $\ast$ $>$\+::iterator person\+Opponent)}{InfectPerson(std::vector< Person * >::iterator personOpponent)}}]{\setlength{\rightskip}{0pt plus 5cm}void Country\+::\+Infect\+Person (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Person} $\ast$ $>$\+::iterator}]{person\+Opponent}
+\end{DoxyParamCaption}
+)}\hypertarget{classCountry_a5c46c5155c99175ffb3acef946312be0}{}\label{classCountry_a5c46c5155c99175ffb3acef946312be0}
+$\ast$\+Zwraca wartość postępu szukania lekarstwa (od 10000 do 0) \index{Country@{Country}!persons@{persons}}
+\index{persons@{persons}!Country@{Country}}
+\subsubsection[{\texorpdfstring{persons()}{persons()}}]{\setlength{\rightskip}{0pt plus 5cm}int Country\+::persons (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCountry_ab1dd10f4a0d9d1cf53fb8a9f4079de93}{}\label{classCountry_ab1dd10f4a0d9d1cf53fb8a9f4079de93}
+$\ast$\+Przeprowadza całą symulację trwania epidemii, zależną od wartości początkowych jej zmiennych. \index{Country@{Country}!search\+For\+Cure@{search\+For\+Cure}}
+\index{search\+For\+Cure@{search\+For\+Cure}!Country@{Country}}
+\subsubsection[{\texorpdfstring{search\+For\+Cure(fstream \&output)}{searchForCure(fstream &output)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Country\+::search\+For\+Cure (
+\begin{DoxyParamCaption}
+\item[{fstream \&}]{output}
+\end{DoxyParamCaption}
+)}\hypertarget{classCountry_aceb291a044a495483951745eecece744}{}\label{classCountry_aceb291a044a495483951745eecece744}
+$\ast$\+Zaraża losowo wybraną osobę co 4 dni. Czyli symulacja naturalnego rozprzestrzeniania sie wirusa \index{Country@{Country}!show\+Everyone@{show\+Everyone}}
+\index{show\+Everyone@{show\+Everyone}!Country@{Country}}
+\subsubsection[{\texorpdfstring{show\+Everyone()}{showEveryone()}}]{\setlength{\rightskip}{0pt plus 5cm}string Country\+::show\+Everyone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCountry_a167fa855a40dd3bb0274ee8c01c994c8}{}\label{classCountry_a167fa855a40dd3bb0274ee8c01c994c8}
+$\ast$\+Zwraca ilość osób zdrowych, chorych, postęp szukania lekarstwa itp. używana do wyświetlenia wartości początkowych na początku trwania programu \index{Country@{Country}!spread\+Virus@{spread\+Virus}}
+\index{spread\+Virus@{spread\+Virus}!Country@{Country}}
+\subsubsection[{\texorpdfstring{spread\+Virus(int i, fstream \&output)}{spreadVirus(int i, fstream &output)}}]{\setlength{\rightskip}{0pt plus 5cm}void Country\+::spread\+Virus (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{fstream \&}]{output}
+\end{DoxyParamCaption}
+)}\hypertarget{classCountry_aa8fe23fc3002c75b93946cae54c4f202}{}\label{classCountry_aa8fe23fc3002c75b93946cae54c4f202}
+$\ast$W przypadku walki wygranej przez chorobę, funcja ta zaraża człowieka chorobą z którą przegrał walkę. void fight(fstream \&output, int output\+Info);//\+Symuluje walkę pomiędzy osobą a chorobą. Choroba nie zadaje osobie żadnych obrażeń, w przypadku wygranej po prostu zaraża osobę, natomiast w przypadku przegranej jednostka tej choroby ginie. Jeśli wygrywa osoba, to nie zostaje zarażona. Wynik walki jest uzależniony od parametrów zarówno choroby, jak i osoby, wybieranych losowo, jednak z innym przedziałem losowości w przypadku różnych klas chorób i osób. 
 
 Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
 \item 

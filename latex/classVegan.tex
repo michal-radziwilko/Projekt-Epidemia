@@ -1,5 +1,9 @@
 \hypertarget{classVegan}{}\section{Dokumentacja klasy Vegan}
 \label{classVegan}\index{Vegan@{Vegan}}
+
+
+{\ttfamily \#include $<$Person.\+h$>$}
+
 Diagram dziedziczenia dla Vegan\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,24 +13,90 @@ Diagram dziedziczenia dla Vegan\begin{figure}[H]
 \subsection*{Metody publiczne}
 \begin{DoxyCompactItemize}
 \item 
-int {\bfseries attack} ()\hypertarget{classVegan_a49da538a7bdc7cf95e2995d374844690}{}\label{classVegan_a49da538a7bdc7cf95e2995d374844690}
-
+int \hyperlink{classVegan_a49da538a7bdc7cf95e2995d374844690}{attack} ()
 \item 
-int {\bfseries attack\+Chance} ()\hypertarget{classVegan_add22eca62b8e3c3ffe93da1d0e5d91f5}{}\label{classVegan_add22eca62b8e3c3ffe93da1d0e5d91f5}
-
+int \hyperlink{classVegan_add22eca62b8e3c3ffe93da1d0e5d91f5}{attack\+Chance} ()
 \item 
-int {\bfseries dodge\+Chance} ()\hypertarget{classVegan_aad321fbb0951c24515900f002ede0286}{}\label{classVegan_aad321fbb0951c24515900f002ede0286}
-
+int \hyperlink{classVegan_aad321fbb0951c24515900f002ede0286}{dodge\+Chance} ()
 \item 
-int {\bfseries intelligence} ()\hypertarget{classVegan_a2b63e0fcdefc296e4164d4e26fda4aa8}{}\label{classVegan_a2b63e0fcdefc296e4164d4e26fda4aa8}
-
+int \hyperlink{classVegan_a2b63e0fcdefc296e4164d4e26fda4aa8}{intelligence} ()
 \item 
-virtual int {\bfseries who} ()\hypertarget{classVegan_a46b4008d435a0ab8c0986ceda995d2da}{}\label{classVegan_a46b4008d435a0ab8c0986ceda995d2da}
-
+virtual int \hyperlink{classVegan_a46b4008d435a0ab8c0986ceda995d2da}{who} ()
 \item 
-virtual string {\bfseries description} ()\hypertarget{classVegan_a021955c46ba7952ab46a07a768f9b3b3}{}\label{classVegan_a021955c46ba7952ab46a07a768f9b3b3}
-
+virtual string \hyperlink{classVegan_a021955c46ba7952ab46a07a768f9b3b3}{description} ()
 \end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+$\ast$\+Klasa naukowców. Są oni zupełnie bezbronni, służą tylko znalezieniu lekarstwa oraz jako jedyni posiadają inteligencję. 
+
+\subsection{Dokumentacja funkcji składowych}
+\index{Vegan@{Vegan}!attack@{attack}}
+\index{attack@{attack}!Vegan@{Vegan}}
+\subsubsection[{\texorpdfstring{attack()}{attack()}}]{\setlength{\rightskip}{0pt plus 5cm}int Vegan\+::attack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classVegan_a49da538a7bdc7cf95e2995d374844690}{}\label{classVegan_a49da538a7bdc7cf95e2995d374844690}
+$\ast$\+Zadaje dmg osobom. 
+
+Implementuje \hyperlink{classPerson_a7cabe13a0c3122fa7ac0e9f005a87346}{Person}.
+
+\index{Vegan@{Vegan}!attack\+Chance@{attack\+Chance}}
+\index{attack\+Chance@{attack\+Chance}!Vegan@{Vegan}}
+\subsubsection[{\texorpdfstring{attack\+Chance()}{attackChance()}}]{\setlength{\rightskip}{0pt plus 5cm}int Vegan\+::attack\+Chance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classVegan_add22eca62b8e3c3ffe93da1d0e5d91f5}{}\label{classVegan_add22eca62b8e3c3ffe93da1d0e5d91f5}
+$\ast$\+Atak wyprowadzany przez osobę 
+
+Implementuje \hyperlink{classPerson_a4f525256f6ffb3135e61bd22ff48c37a}{Person}.
+
+\index{Vegan@{Vegan}!description@{description}}
+\index{description@{description}!Vegan@{Vegan}}
+\subsubsection[{\texorpdfstring{description()}{description()}}]{\setlength{\rightskip}{0pt plus 5cm}string Vegan\+::description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classVegan_a021955c46ba7952ab46a07a768f9b3b3}{}\label{classVegan_a021955c46ba7952ab46a07a768f9b3b3}
+$\ast$0-\/\+Common 1-\/\+Scientist 2-\/\+Vegans 
+
+Implementuje \hyperlink{classPerson_aef5de94dd30ff791097a0c1444999e60}{Person}.
+
+\index{Vegan@{Vegan}!dodge\+Chance@{dodge\+Chance}}
+\index{dodge\+Chance@{dodge\+Chance}!Vegan@{Vegan}}
+\subsubsection[{\texorpdfstring{dodge\+Chance()}{dodgeChance()}}]{\setlength{\rightskip}{0pt plus 5cm}int Vegan\+::dodge\+Chance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classVegan_aad321fbb0951c24515900f002ede0286}{}\label{classVegan_aad321fbb0951c24515900f002ede0286}
+$\ast$\+Szansa na atak 
+
+Implementuje \hyperlink{classPerson_adb64abc2cc5e02f1ebbc7823e7921168}{Person}.
+
+\index{Vegan@{Vegan}!intelligence@{intelligence}}
+\index{intelligence@{intelligence}!Vegan@{Vegan}}
+\subsubsection[{\texorpdfstring{intelligence()}{intelligence()}}]{\setlength{\rightskip}{0pt plus 5cm}int Vegan\+::intelligence (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classVegan_a2b63e0fcdefc296e4164d4e26fda4aa8}{}\label{classVegan_a2b63e0fcdefc296e4164d4e26fda4aa8}
+$\ast$\+Szansa na unik 
+
+Implementuje \hyperlink{classPerson_a3d18aad60b7ea1305e1a469d7d5fc216}{Person}.
+
+\index{Vegan@{Vegan}!who@{who}}
+\index{who@{who}!Vegan@{Vegan}}
+\subsubsection[{\texorpdfstring{who()}{who()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Vegan\+::who (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classVegan_a46b4008d435a0ab8c0986ceda995d2da}{}\label{classVegan_a46b4008d435a0ab8c0986ceda995d2da}
+$\ast$\+Inteligencja 
+
+Implementuje \hyperlink{classPerson_a7d102d6c8ed786f4ad1fcd2c3cea2f3e}{Person}.
+
 
 
 Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}

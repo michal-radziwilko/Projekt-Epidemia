@@ -38,7 +38,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
-      <li><a href="pages.html"><span>Dodatkowe&#160;strony</span></a></li>
       <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
       <li><a href="files.html"><span>Pliki</span></a></li>
       <li>
@@ -64,6 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
       <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
       <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
       <li><a href="hierarchy.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -89,6 +89,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 <div class="title">Dokumentacja klasy Disease<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Disease_8h_source.html">Disease.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagram dziedziczenia dla Disease</div>
 <div class="dyncontent">
@@ -121,13 +123,41 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>attackChance</
 <tr class="memitem:a08e55daa6094568570d869ac86fa1f3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08e55daa6094568570d869ac86fa1f3b"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>who</b> ()=0</td></tr>
 <tr class="separator:a08e55daa6094568570d869ac86fa1f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4186b72a74f3d2e654b38254ca0d32b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4186b72a74f3d2e654b38254ca0d32b7"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>tryAttack</b> ()=0</td></tr>
+<tr class="memitem:a4186b72a74f3d2e654b38254ca0d32b7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisease.html#a4186b72a74f3d2e654b38254ca0d32b7">tryAttack</a> ()=0</td></tr>
 <tr class="separator:a4186b72a74f3d2e654b38254ca0d32b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab472fecd75428fa29567021314ff6bbe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab472fecd75428fa29567021314ff6bbe"></a>
 virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> ()=0</td></tr>
 <tr class="separator:ab472fecd75428fa29567021314ff6bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>*Klasa choroby, posiada parametry takie jak HP i ID choroby oraz cechy choroby od których zależy przebieg walki między nią a człowiekiem. </p>
+</div><h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="a4186b72a74f3d2e654b38254ca0d32b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Disease::tryAttack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>*0-CommonDisease 1-UltraVegan 2-Mutagen </p>
+
+<p>Implementowany w <a class="el" href="classMutagen.html#a6c495ef43212c37e125b771d8d02898c">Mutagen</a>, <a class="el" href="classUltraVegan.html#a40927f8fbccf4c87f0ce72b1bcd459a3">UltraVegan</a> i <a class="el" href="classCommonDisease.html#a628842276e544539a55ab484a9bb7bce">CommonDisease</a>.</p>
+
+</div>
+</div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
 <li><a class="el" href="Disease_8h_source.html">Disease.h</a></li>
 <li>main.cpp</li>

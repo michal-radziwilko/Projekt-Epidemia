@@ -1,5 +1,9 @@
 \hypertarget{classDisease}{}\section{Dokumentacja klasy Disease}
 \label{classDisease}\index{Disease@{Disease}}
+
+
+{\ttfamily \#include $<$Disease.\+h$>$}
+
 Diagram dziedziczenia dla Disease\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -27,12 +31,28 @@ virtual int {\bfseries attack\+Chance} ()=0\hypertarget{classDisease_ae527ac8784
 virtual int {\bfseries who} ()=0\hypertarget{classDisease_a08e55daa6094568570d869ac86fa1f3b}{}\label{classDisease_a08e55daa6094568570d869ac86fa1f3b}
 
 \item 
-virtual bool {\bfseries try\+Attack} ()=0\hypertarget{classDisease_a4186b72a74f3d2e654b38254ca0d32b7}{}\label{classDisease_a4186b72a74f3d2e654b38254ca0d32b7}
-
+virtual bool \hyperlink{classDisease_a4186b72a74f3d2e654b38254ca0d32b7}{try\+Attack} ()=0
 \item 
 virtual string {\bfseries description} ()=0\hypertarget{classDisease_ab472fecd75428fa29567021314ff6bbe}{}\label{classDisease_ab472fecd75428fa29567021314ff6bbe}
 
 \end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+$\ast$\+Klasa choroby, posiada parametry takie jak HP i ID choroby oraz cechy choroby od których zależy przebieg walki między nią a człowiekiem. 
+
+\subsection{Dokumentacja funkcji składowych}
+\index{Disease@{Disease}!try\+Attack@{try\+Attack}}
+\index{try\+Attack@{try\+Attack}!Disease@{Disease}}
+\subsubsection[{\texorpdfstring{try\+Attack()=0}{tryAttack()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Disease\+::try\+Attack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classDisease_a4186b72a74f3d2e654b38254ca0d32b7}{}\label{classDisease_a4186b72a74f3d2e654b38254ca0d32b7}
+$\ast$0-\/\+Common\+Disease 1-\/\+Ultra\+Vegan 2-\/\+Mutagen 
+
+Implementowany w \hyperlink{classMutagen_a6c495ef43212c37e125b771d8d02898c}{Mutagen}, \hyperlink{classUltraVegan_a40927f8fbccf4c87f0ce72b1bcd459a3}{Ultra\+Vegan} i \hyperlink{classCommonDisease_a628842276e544539a55ab484a9bb7bce}{Common\+Disease}.
+
 
 
 Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
